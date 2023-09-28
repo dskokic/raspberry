@@ -7,7 +7,7 @@ Raspberry Pi is designed to be used in both scenarios. In this description the f
 1. Selecting and downloading OS image
 
 So, after purchasing Raspberry Pi device (RPi from now on), the first step is to select and install operating system (OS) that will manage all the hardware present on RPi. 
-Since there wil be not HDMI monitor nor 101-key attached to RPi it is reasonable to install Raspberry Pi OS Lite, which is intended for headless RPi. It does't include many of the software packages available in full OS version and ith therefore of significantly smaller size.
+Since there wil be not HDMI monitor nor 101-key attached to RPi it is reasonable to install Raspberry Pi OS Lite, which is intended for headless RPi. It does't include many of the software packages available in full OS version and is therefore of significantly smaller size.
 
 Download appropriate OS image using the following URL:
 https://www.raspberrypi.com/software/operating-systems/
@@ -23,7 +23,7 @@ So called "Raspberry Pi Imager" appliacation is also avaiable for SD card flashi
 
 In addition, on Linux one may use "dd" (disk dump) utility to flash sd card:
 
-> dd if=<OS image filenam> of=(SD card device file) BS=1M
+> dd if=<OS image filename> of=(SD card device file) BS=1M
   
   e.g.: > sudo dd if=2022-01-28-raspios-bullseye-armhf-lite.img of=/dev/sdb bs=4M conv=fsync status=progress
 

@@ -1,0 +1,19 @@
+In default Raspberry Pi OS configuration, serial console is not enabled
+and therefore neither you will be able to see messages during linux boot
+on the console, neither you will be able to execute commands via console.
+
+To enable serial console you must edit the file named config.txt and add
+the following line at the bottom of the file:
+
+enable_uart=1
+
+The easiest way to do it is to put the SD card in the card reader of your
+PC and edit the file. On Linux you will probably need to mount boot 
+partition to some folder, to see the file, like:
+
+mkdir ~/boot
+
+mount /dev/sdb1 ~/boot
+
+vi ~/boot/config.txt 
+ 

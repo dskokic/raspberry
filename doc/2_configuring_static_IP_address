@@ -1,0 +1,24 @@
+You will probably want to assign static IP address to your 
+raspberry PI. For IP configuration you need to edit the file
+
+/etc/dhcpcd.conf
+
+And set the following (change IP address according to your preferences):
+
+interface eth0
+inform 192.168.1.10
+static ip_address=192.168.1.10/24
+static routers=192.168.1.1
+static domain_name_servers=192.168.1.1  
+
+
+You will need to restart eth0 interface:
+
+sudo ifconfig eth0 down
+sudo ifconfig eth0 up
+
+If it doesn't set the IP address (check with ifconfig command), then
+restart the board:
+
+sudo reboot
+
