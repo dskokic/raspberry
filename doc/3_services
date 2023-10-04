@@ -1,0 +1,22 @@
+To list the services use the command service and press <TAB> to show the list of the services
+
+Or you can type the command:
+
+> service --status-all
+
+To check the status, to start or stop the service do the following:
+
+> service ssh status
+> service ssh start
+> service ssh stop
+
+
+To install ssh server do the following:
+
+> sudo apt install openssh-server
+
+After installation, ssh server is automatically started, which can be checked with command:
+
+> service ssh status
+
+ 
